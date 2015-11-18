@@ -9,3 +9,5 @@ if [ -n "$changes" ];
 then
 	echo $changes | mail -s "Easylist update may affect your site" $EMAIL
 fi
+
+hg pull -u -R easylist/
